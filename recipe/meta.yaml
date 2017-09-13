@@ -33,11 +33,11 @@ test:
     - "py.test --traceconfig | grep pytest-mpl-{{version}}"
 
 about:
-  home: https://github.com/astrofrog/pytest-mpl
+  home: https://github.com/matplotlib/pytest-mpl
   license: BSD 2-Clause
   license_family: BSD
   summary: 'pytest plugin to help with testing figures output from Matplotlib'
-  dev_url: https://github.com/astrofrog/pytest-mpl
+  dev_url: https://github.com/matplotlib/pytest-mpl
 
 extra:
   recipe-maintainers:
