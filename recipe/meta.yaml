@@ -1,17 +1,20 @@
-{% set version = "0.7" %}
+{% set name = "pytest-mpl" %}
+{% set version = "0.8" %}
+{% set sha256 = "d8c67a781cfd011fd9f20cb5a957f62701afcc5b44685c98369e1c22df960ccd" %}
 
 package:
-  name: pytest-mpl
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: pytest-mpl-{{version}}.tar.gz
-  url: https://pypi.io/packages/source/p/pytest-mpl/pytest-mpl-{{version}}.tar.gz
-  md5: 9c9bc0f4b48c14497600fde10db07336
+  fn: {{name}}-{{version}}.tar.gz
+  url: https://pypi.io/packages/source/{{name[0]}}/{{name}}/{{name}}-{{version}}.tar.gz
+  sha256: {{sha256}}
 
 build:
-    script: python setup.py install --single-version-externally-managed --record record.txt
     number: 0
+    noarch: python
+    script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
@@ -30,9 +33,11 @@ test:
     - "py.test --traceconfig | grep pytest-mpl-{{version}}"
 
 about:
-  home: https://github.com/astrofrog/pytest-mpl
-  license: BSD
+  home: https://github.com/matplotlib/pytest-mpl
+  license: BSD 2-Clause
+  license_family: BSD
   summary: 'pytest plugin to help with testing figures output from Matplotlib'
+  dev_url: https://github.com/matplotlib/pytest-mpl
 
 extra:
   recipe-maintainers:
