@@ -14,9 +14,7 @@ Summary: pytest plugin to help with testing figures output from Matplotlib
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-mpl-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytest-mpl-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pytest-mpl-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pytest-mpl-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pytest-mpl-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pytest-mpl-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-mpl-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytest-mpl-feedstock)
 
 Current release info
 ====================
