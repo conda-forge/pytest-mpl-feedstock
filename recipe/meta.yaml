@@ -1,6 +1,6 @@
 {% set name = "pytest-mpl" %}
-{% set version = "0.8" %}
-{% set sha256 = "d8c67a781cfd011fd9f20cb5a957f62701afcc5b44685c98369e1c22df960ccd" %}
+{% set version = "0.9" %}
+{% set sha256 = "8f49dffb39e232c081961a5fc914c45703d17579a627b694a70b91d7670200bc" %}
 
 package:
   name: {{ name|lower }}
