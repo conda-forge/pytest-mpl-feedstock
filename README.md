@@ -5,11 +5,11 @@ Home: https://github.com/matplotlib/pytest-mpl
 
 Package license: BSD 2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-mpl-feedstock/blob/master/LICENSE.txt)
 
 Summary: pytest plugin to help with testing figures output from Matplotlib
 
-
+Development: https://github.com/matplotlib/pytest-mpl
 
 Current build status
 ====================

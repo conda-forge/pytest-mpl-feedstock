@@ -1,20 +1,20 @@
 {% set name = "pytest-mpl" %}
-{% set version = "0.11" %}
-{% set sha256 = "26c5a47a8fdbc04652f18b65c587da642c6cc0354680ee44b16c161d9800a2ce" %}
+{% set version = "0.12" %}
+{% set sha256 = "4a223909e5148c99bd18891848c7871457729322c752c9c470bd8dd6bdf9f940" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{name}}-{{version}}.tar.gz
-  url: https://pypi.io/packages/source/{{name[0]}}/{{name}}/{{name}}-{{version}}.tar.gz
-  sha256: {{sha256}}
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-    number: 1
-    noarch: python
-    script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -26,19 +26,17 @@ requirements:
     - python
     - pytest
     - matplotlib-base
-    - nose
-    - pillow
 
 test:
   commands:
-    - "py.test --traceconfig | grep pytest-mpl-{{version}}"
+    - py.test --traceconfig | grep pytest-mpl-{{ version }}
 
 about:
   home: https://github.com/matplotlib/pytest-mpl
   license: BSD 2-Clause
   license_file: LICENSE
   license_family: BSD
-  summary: 'pytest plugin to help with testing figures output from Matplotlib'
+  summary: pytest plugin to help with testing figures output from Matplotlib
   dev_url: https://github.com/matplotlib/pytest-mpl
 
 extra:
