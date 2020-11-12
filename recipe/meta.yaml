@@ -26,8 +26,6 @@ requirements:
     - python
     - pytest
     - matplotlib-base
-    - nose
-    - pillow
 
 test:
   commands:
