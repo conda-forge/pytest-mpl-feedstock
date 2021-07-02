@@ -1,6 +1,6 @@
 {% set name = "pytest-mpl" %}
-{% set version = "0.12" %}
-{% set sha256 = "4a223909e5148c99bd18891848c7871457729322c752c9c470bd8dd6bdf9f940" %}
+{% set version = "0.13" %}
+{% set sha256 = "582db6e14315f9b08cbd2df39b136dc344bfe8a27c2f05b995460fb0969ec19e" %}
 
 package:
   name: {{ name|lower }}
@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
 
   run:
-    - python
+    - python >=3.6
     - pytest
     - matplotlib-base
 
@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://github.com/matplotlib/pytest-mpl
-  license: BSD 2-Clause
+  license: BSD-2-Clause
   license_file: LICENSE
   license_family: BSD
   summary: pytest plugin to help with testing figures output from Matplotlib
