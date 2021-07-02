@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
 
   run:
-    - python
+    - python >=3.6
     - pytest
     - matplotlib-base
 
@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://github.com/matplotlib/pytest-mpl
-  license: BSD 2-Clause
+  license: BSD-2-Clause
   license_file: LICENSE
   license_family: BSD
   summary: pytest plugin to help with testing figures output from Matplotlib
