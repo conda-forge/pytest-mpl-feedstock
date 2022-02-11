@@ -21,15 +21,20 @@ requirements:
     - python >=3.6
     - pip
     - setuptools
+    - setuptools_scm
 
   run:
     - python >=3.6
     - pytest
     - matplotlib-base
+    - jinja2
+    - packaging
+    - importlib_resources
 
 test:
   commands:
-    - py.test --traceconfig | grep pytest-mpl-{{ version }}
+    # Need to avoid discovering all tests in directory
+    - py.test --traceconfig ${SRCDIR} | grep pytest-mpl-{{ version }}
 
 about:
   home: https://github.com/matplotlib/pytest-mpl
