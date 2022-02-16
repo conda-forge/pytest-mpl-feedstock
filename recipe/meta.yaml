@@ -1,6 +1,6 @@
 {% set name = "pytest-mpl" %}
-{% set version = "0.13" %}
-{% set sha256 = "582db6e14315f9b08cbd2df39b136dc344bfe8a27c2f05b995460fb0969ec19e" %}
+{% set version = "0.14.0" %}
+{% set sha256 = "884e078d2d5380af5643384e233c358e9659825fb2d97ffdaf8f185c434c8d89" %}
 
 package:
   name: {{ name|lower }}
@@ -21,15 +21,20 @@ requirements:
     - python >=3.6
     - pip
     - setuptools
+    - setuptools_scm
 
   run:
     - python >=3.6
     - pytest
     - matplotlib-base
+    - jinja2
+    - packaging
+    - importlib_resources
 
 test:
   commands:
-    - py.test --traceconfig | grep pytest-mpl-{{ version }}
+    # Need to avoid discovering all tests in directory
+    - py.test --traceconfig ${SRCDIR} | grep pytest-mpl-{{ version }}
 
 about:
   home: https://github.com/matplotlib/pytest-mpl
