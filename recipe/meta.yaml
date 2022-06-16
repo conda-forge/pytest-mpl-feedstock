@@ -1,6 +1,6 @@
 {% set name = "pytest-mpl" %}
-{% set version = "0.15.1" %}
-{% set sha256 = "77a812faffe8425304e380c2d0aab84eca32d3d4a118b650b5478040d076ecf6" %}
+{% set version = "0.16.0" %}
+{% set sha256 = "4d3a9a81f075e45100c64f955ac11f6842d3f81e93c34c2d5c58b7c03da40ffd" %}
 
 package:
   name: {{ name|lower }}
@@ -30,6 +30,7 @@ requirements:
     - jinja2
     - packaging
     - importlib_resources
+    - pillow
 
 test:
   commands:
