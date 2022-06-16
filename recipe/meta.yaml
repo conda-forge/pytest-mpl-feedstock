@@ -30,6 +30,7 @@ requirements:
     - jinja2
     - packaging
     - importlib_resources
+    - pillow
 
 test:
   commands:
