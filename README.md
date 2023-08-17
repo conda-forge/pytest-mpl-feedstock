@@ -1,11 +1,11 @@
-About pytest-mpl
-================
+About pytest-mpl-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-mpl-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/matplotlib/pytest-mpl
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-mpl-feedstock/blob/main/LICENSE.txt)
 
 Summary: pytest plugin to help with testing figures output from Matplotlib
 
@@ -145,6 +145,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@astrofrog-conda-forge](https://github.com/astrofrog-conda-forge/)
+* [@astrofrog](https://github.com/astrofrog/)
 * [@dopplershift](https://github.com/dopplershift/)
 
