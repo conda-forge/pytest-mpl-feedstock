@@ -20,17 +20,16 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
-    - setuptools_scm
+    - setuptools >=80
+    - setuptools_scm >=8
 
   run:
     - python >={{ python_min }}
-    - pytest
-    - matplotlib-base
-    - jinja2
-    - packaging
-    - importlib_resources
-    - pillow
+    - pytest >=5.4.0
+    - matplotlib-base >=3.3.3
+    - jinja2 >=2.10.2
+    - packaging >=22.0.0
+    - pillow >=8.1.1
 
 test:
   requires:
