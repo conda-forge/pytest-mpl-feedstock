@@ -25,10 +25,10 @@ requirements:
 
   run:
     - python >={{ python_min }}
-    - pytest >=5.4.0
-    - matplotlib-base >=3.3.3
-    - jinja2 >=2.10.2
+    - pytest >=6.2.5
+    - matplotlib-base >=3.5.3
     - packaging >=22.0.0
+    - jinja2 >=2.10.2
     - pillow >=8.1.1
 
 test:
